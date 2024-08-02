@@ -34,20 +34,65 @@
         font-weight: bold;
     }
 
-    .navbar .nav-link{
+    .nav-title a{
+        color: black;
+    }
+
+    .nav-link ul{
+        list-style: none;
+        padding-left: 20px;
         display: flex;
         justify-content: center;
     }
 
-    .nav-link ul li{
-        list-style: none;
-        padding-left: 20px;
-        display: flex;
-    }
-
     .nav-link a{
         color: black;
+        font-weight: 500;
+        margin: 0 15px;
+    }
+
+    .banner{
+        width: 100vw;
+        height: 100vh;
         display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .banner-title{
+        margin-top: 5rem;
+        padding: 2rem;
+    }
+
+    .banner-title h1{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    .banner-title p{
+        margin-left: 8px;
+    }
+
+    .banner-title .okok a{
+        color: grey;
+    }
+
+    .banner-title .okok a:hover{
+        color: lightslategray;
+        font-size: 40px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .banner-img{
+        margin: 1rem;
+        padding: 1rem;
+        background-color: grey;
+        border-radius: 30px;
+    }
+
+    .banner-img img{
+        width: 20rem;
+        border-radius: 30px;
     }
 </style>
 <body>
@@ -67,8 +112,14 @@
         </div>
 
         <div class="banner">
-            <div class="banner-title"></div>
-            <div class="banner-img"></div>
+            <div class="banner-title">
+                <p>#OkokTeam</p>
+                <h1>Hola 👋 Bienvenido  A La Web De</h1>
+                <h1 class="okok"><a href="#">Okok.com</a></h1>
+            </div>
+            <div class="banner-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJsqJ5vpc9xCZjzpNU2bfisrtABiouqx13fw&s" alt="">
+            </div>
         </div>
 
     </section>
